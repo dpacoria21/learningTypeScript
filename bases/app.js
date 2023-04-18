@@ -1,13 +1,5 @@
 "use strict";
-const msg = 'Hola mundo';
-let num = 123;
-const heroe = {
-    name: 'Ironman',
-    age: 45,
-};
-heroe.age = 50;
-console.log(num);
-console.log(msg);
-console.log(heroe.age + 1);
-// msg = "Diego";
-// msg = 123;   no se puede realizar esto porque msg es un tipo string
+(() => {
+    const a = 10;
+    console.log(a);
+})();
