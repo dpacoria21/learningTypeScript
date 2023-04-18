@@ -1,5 +1,6 @@
-var msg = 'Hola mundo';
-var num = 123;
+"use strict";
+const msg = 'Hola mundo';
+let num = 123;
 console.log(num);
 console.log(msg);
 // msg = "Diego";
