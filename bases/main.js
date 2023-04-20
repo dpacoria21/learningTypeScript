@@ -40,9 +40,20 @@
         getFullNameXmen() {
             console.log(super.getFullName());
         }
+        get getExtendName() {
+            return `${this.name} - ${this.realName}`;
+        }
+        set setName(newName) {
+            if (newName.length <= 3)
+                throw new Error('Nombre muy pequeno');
+            this.name = newName;
+        }
     }
     const wolverine = new Xmen('Wolverine', 'Logan', true);
     console.log(wolverine);
     wolverine.getFullNameXmen();
+    console.log(wolverine.getExtendName);
+    wolverine.setName = 'Wolverine X';
+    console.log(wolverine);
 })();
 //# sourceMappingURL=main.js.map
