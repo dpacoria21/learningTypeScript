@@ -1,5 +1,31 @@
 "use strict";
 (() => {
+    class Mutante {
+        constructor(name, realName) {
+            this.name = name;
+            this.realName = realName;
+        }
+    }
+    class Xmen extends Mutante {
+        salvarMundo() {
+            return 'Mundo Salvado!';
+        }
+    }
+    class Villian extends Mutante {
+        conquistarMundo() {
+            return 'Conquistar el Mundo!';
+        }
+    }
+    const wolverine = new Xmen('Wolverine', 'Logan');
+    const magneto = new Villian('Magneto', 'Magnus');
+    console.log(wolverine.salvarMundo());
+    console.log(magneto.conquistarMundo());
+    const printName = (character) => {
+        console.log(character.name);
+    };
+    printName(magneto);
+})();
+(() => {
     class Avenger {
         static getAvgAge() {
             return Avenger.avgAge;
@@ -15,17 +41,12 @@
     }
     Avenger.avgAge = 35;
     const antman = new Avenger('Ant-Man', 'Avengers', 'Tomas Jefferson');
-    console.log(antman);
-    console.log(antman.realName);
-    console.log(antman.bio());
-    console.log(Avenger.getAvgAge());
 })();
 (() => {
     class Avenger {
         constructor(name, realName) {
             this.name = name;
             this.realName = realName;
-            console.log('Constructor Avenger llamado!!!');
         }
         getFullName() {
             return `${this.name} ${this.realName}`;
@@ -35,10 +56,8 @@
         constructor(name, realName, isMutant) {
             super(name, realName);
             this.isMutant = isMutant;
-            console.log('Constructor Xmen llamado!!!');
         }
         getFullNameXmen() {
-            console.log(super.getFullName());
         }
         get getExtendName() {
             return `${this.name} - ${this.realName}`;
@@ -50,10 +69,7 @@
         }
     }
     const wolverine = new Xmen('Wolverine', 'Logan', true);
-    console.log(wolverine);
     wolverine.getFullNameXmen();
-    console.log(wolverine.getExtendName);
     wolverine.setName = 'Wolverine X';
-    console.log(wolverine);
 })();
 //# sourceMappingURL=main.js.map
