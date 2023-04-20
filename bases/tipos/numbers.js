@@ -10,6 +10,6 @@
         console.log('Estamos salvados');
     }
     avengers = Number('55A');
-    // NaN Not a Number es considerado un numero
     console.log({ avengers });
 })();
+//# sourceMappingURL=numbers.js.map

@@ -6,3 +6,4 @@
         powers: ['Super velocidad', 'Viajar en el tiempo'],
     };
 })();
+//# sourceMappingURL=objects.js.map

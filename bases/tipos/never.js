@@ -7,5 +7,5 @@
         return 1;
     };
     abc('Auxilio!');
-    // console.log('Hola');
 })();
+//# sourceMappingURL=never.js.map

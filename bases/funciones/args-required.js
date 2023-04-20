@@ -6,7 +6,7 @@
         }
         return `${firstName} ${lastName}`;
     };
-    // let noName: string = 'Tony';
     const name = fullName('Tony', 'Stark');
     console.log({ name });
 })();
+//# sourceMappingURL=args-required.js.map
