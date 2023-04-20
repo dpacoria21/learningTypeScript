@@ -34,7 +34,7 @@
             id: 256,
             zip: 'ksu Otap',
             city: 'Peru'
-        }
+        },
         getFullAddress(id: string) {
             return this.address.city;
         }
