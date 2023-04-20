@@ -65,6 +65,12 @@ var __rest = (this && this.__rest) || function (s, e) {
         console.log({ rest, vision });
     };
     printAvenger(avenger);
+    const avengerArr = ['Cap. Americo', 'Ironman', 'Hulk'];
+    const [capitan, ironman, ...rest] = avengerArr;
+    console.log(ironman, capitan);
+    for (const aveng of avengerArr) {
+        console.log(aveng);
+    }
 })();
 (() => {
     const fullName = (firstName, lastName, upper = false) => {

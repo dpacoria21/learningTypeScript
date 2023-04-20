@@ -22,6 +22,15 @@
 
     printAvenger(avenger);
 
+    const avengerArr: string[] = ['Cap. Americo', 'Ironman', 'Hulk'];
+
+    const [capitan ,ironman , ...rest] = avengerArr;
+    console.log(ironman, capitan);
+
+    for (const aveng of avengerArr) {
+        console.log(aveng);
+    }
+
     // const {poder, vision} = avenger;
 
     // console.log(poder.toFixed(2), vision.toUpperCase());
