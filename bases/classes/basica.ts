@@ -24,10 +24,10 @@
     }
 
     const antman: Avenger = new Avenger('Ant-Man', 'Avengers', 'Tomas Jefferson');
-    console.log(antman);
-    console.log(antman.realName);
+    // console.log(antman);
+    // console.log(antman.realName);
 
-    console.log(antman.bio());
-    console.log(Avenger.getAvgAge());
+    // console.log(antman.bio());
+    // console.log(Avenger.getAvgAge());
     // console.log(Avenger.avgAge);
 })();
