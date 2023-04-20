@@ -14,4 +14,30 @@
         }
     };
 })();
+(() => {
+    const client = {
+        name: 'Fernando',
+        age: 25,
+        address: {
+            id: 255,
+            zip: 'KY2 SUD',
+            city: 'Ottawa'
+        },
+        getFullAddress(id) {
+            return this.address.city;
+        }
+    };
+    const client2 = {
+        name: 'Melissa',
+        age: 30,
+        address: {
+            id: 256,
+            zip: 'ksu Otap',
+            city: 'Peru'
+        },
+        getFullAddress(id) {
+            return this.address.city;
+        }
+    };
+})();
 //# sourceMappingURL=main.js.map
